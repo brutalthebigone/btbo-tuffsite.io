@@ -1,0 +1,33 @@
+{
+  "name": "btbo-tuffsite.io",
+  "version": "0.0.0-semantically-released",
+  "description": "Enterprise AI Blockchain Cloud-Native Microservices (it's tuff)",
+  "main": "README.md",
+  "scripts": {
+    "start": "echo 'My new csa project is tuff' && sleep 1 && echo '🚀'",
+    "build": "echo 'Building enterprise synergy pipeline...' && mkdir -p dist && cp README.md dist/ && echo 'Build complete ✅'",
+    "test": "echo 'Running 47,000 test cases...' && echo '✅ All tests pass (we only run the ones that pass)'",
+    "deploy": "echo 'Deploying to multi-cloud mesh... 🚀' && echo 'Deployment successful (probably)'",
+    "lint": "echo 'Your README could use more emojis'",
+    "audit": "echo 'Auditing blockchain consensus... ⛓️' && echo 'Chain is tuff ✅'",
+    "docker:compose": "echo 'Composing docker...'"
+  },
+  "dependencies": {
+    "synergy": "^99.9.9",
+    "paradigm-shift": "^42.0.0",
+    "blockchain": "^1.0.0-beta.1",
+    "ai": "latest",
+    "web3": "^4.20.69",
+    "quantum": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-emojis": "^1.0.0",
+    "babel-plugin-synergy": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=99.0.0",
+    "npm": ">=99.0.0",
+    "hype": ">=9000"
+  },
+  "license": "Proprietary Enterprise Synergy License™"
+}
