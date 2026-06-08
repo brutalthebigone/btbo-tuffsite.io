@@ -6,7 +6,6 @@ style.textContent = `
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background: radial-gradient(circle at top, #1e3c72 0%, #2a5298 100%);
   }
 
@@ -67,7 +66,7 @@ style.textContent = `
     }
   
   .topbar a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     }
