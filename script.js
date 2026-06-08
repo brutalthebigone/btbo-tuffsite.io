@@ -45,6 +45,32 @@ style.textContent = `
     border-radius: 4px;
     will-change: transform, opacity;
   }
+
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    }
+
+  .topbar nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    }
+  
+  .topbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
 `;
 document.head.appendChild(style);
 
