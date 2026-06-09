@@ -56,4 +56,5 @@ function changeBackground() {
     document.body.style.background = '#00ff00';
     return;
   }
+  alert("Hello Bluds!");
 }
