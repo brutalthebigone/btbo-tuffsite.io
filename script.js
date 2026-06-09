@@ -58,3 +58,5 @@ function changeBackground() {
   }
   alert("Hello Bluds!");
 }
+
+document.body.appendChild(button);
