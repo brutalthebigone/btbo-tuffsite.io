@@ -52,9 +52,12 @@ function changeBackground() {
     document.body.style.background = '#0000ff';
     return;
   }
+  else if (document.body.style.background === 'rgb(0, 0, 255)') {
+    document.body.style.background = '#ff0000';
+    return;
+  }
   else {
     document.body.style.background = '#00ff00';
-    return;
   }
   alert("Hello Bluds!");
 }
