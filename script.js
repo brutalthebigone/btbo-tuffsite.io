@@ -65,22 +65,3 @@ function changeBackground() {
 }
 
 document.body.appendChild(button);
-
-const style = document.createElement('style');
-style.textContent = `
-  body { 
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00ff00;
-}
-  .button {
-    padding: 400px 500px;
-    background: #ff0000;
-    color: white;
-    size: 200px;
-}
-`;
-document.head.appendChild(style);
