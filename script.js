@@ -44,10 +44,6 @@ style.textContent = `
 
 `;
 
-const button = document.createElement('button');
-button.textContent = "This button will do many a thing";
-button.addEventListener('click', changeBackground);
-
 function changeBackground() {
   alert("Hello Bluds!");
   if (document.body.style.background === 'rgb(0, 255, 0)') {
