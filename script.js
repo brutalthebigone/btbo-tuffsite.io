@@ -36,9 +36,10 @@ style.textContent = `
     }
   
   .button {
-    padding: 10px 20px;
+    padding: 400px 500px;
     background: #ff0000;
     color: white;
+    size: 200px;
     }
 
 `;
