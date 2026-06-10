@@ -16,11 +16,11 @@ style.textContent = `
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.9);
-    color: white;
+    color: black;
     padding: 10px 20px;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     }
 
   .topbar nav {
@@ -49,6 +49,7 @@ button.textContent = "This button will do many a thing";
 button.addEventListener('click', changeBackground);
 
 function changeBackground() {
+  alert("Hello Bluds!");
   if (document.body.style.background === 'rgb(0, 255, 0)') {
     document.body.style.background = '#0000ff';
     return;
@@ -61,7 +62,6 @@ function changeBackground() {
     document.body.style.background = '#00ff00';
     return;
   }
-  alert("Hello Bluds!");
 }
 
 document.body.appendChild(button);
