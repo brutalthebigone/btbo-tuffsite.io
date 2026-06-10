@@ -64,5 +64,23 @@ function changeBackground() {
   }
 }
 
+function myMethod() {
+  alert("This is my method!");
+}
+
+function theMethod() {
+  alert("YOU CLICKED THE OHIO BUTTON");
+  for (let i = 0; i < 1000; i++) {
+    document.body.style.background = 'rgb(255, 255, 255)';
+    setTimeout(1000);
+      document.body.style.background = 'rgb(0, 0, 0)';
+  }
+}
+
+function theOtherMethod() {
+  alert("This method is peaceful as shit.");
+  document.body.appendChild(button);
+}
+
 document.body.appendChild(button);
 document.head.appendChild(style);
