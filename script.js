@@ -65,3 +65,4 @@ function changeBackground() {
 }
 
 document.body.appendChild(button);
+document.head.appendChild(style);
