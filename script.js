@@ -43,6 +43,8 @@ style.textContent = `
     }
 
 `;
+document.head.appendChild(style);
+const button = document.createElement('button');
 
 function changeBackground() {
   alert("Hello Bluds!");
@@ -78,5 +80,3 @@ function theOtherMethod() {
   document.body.appendChild(button);
 }
 
-document.body.appendChild(button);
-document.head.appendChild(style);
