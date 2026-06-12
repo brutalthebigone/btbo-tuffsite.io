@@ -74,6 +74,13 @@ function theMethod() {
     document.body.style.background = 'rgb(0, 0, 0)';
     setTimeout({}, 10);
   }
+
+  let state = 0;
+  const interval = setInterval(() => {
+    document.body.style.background = state % 2 ? '#000' : '#fff';
+    state += 1;
+    if (state >= 1000) clearInterval(interval);
+  }, 40);
 }
 
 function theOtherMethod() {
