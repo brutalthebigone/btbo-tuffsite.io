@@ -70,8 +70,9 @@ function theMethod() {
   alert("YOU CLICKED THE OHIO BUTTON");
   for (let i = 0; i < 1000; i++) {
     document.body.style.background = 'rgb(255, 255, 255)';
-    setTimeout(1000);
-      document.body.style.background = 'rgb(0, 0, 0)';
+    setTimeout({}, 10);
+    document.body.style.background = 'rgb(0, 0, 0)';
+    setTimeout({}, 10);
   }
 }
 
