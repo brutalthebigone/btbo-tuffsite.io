@@ -42,6 +42,9 @@ style.textContent = `
     }
 
 `;
+
+let i = 0;
+
 document.head.appendChild(style);
 button.classList.add("DiddyButton");
 button.addEventListener('keydown', changeBackground);
@@ -72,15 +75,21 @@ function theMethod() {
   const buttons = document.querySelectorAll('button');
   const interval = setInterval(() => {
     document.body.style.background = state % 2 ? '#000' : '#fff';
-    buttons.forEach(btn => {b.style.padding = Math.random() * 100 + 'px';});
-    buttons.forEach(btn => {b.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
+    buttons.forEach(btn => {btn.style.padding = Math.random() * 100 + 'px';});
+    buttons.forEach(btn => {btn.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
     state += 1;
     if (state >= 1000) clearInterval(interval);
   }, 40);
 }
 
+function newMethod() {
+  document.body.append("THIS IS TEXT THAT YOU CREATE IN THE WORLD");
+}
+
 function theOtherMethod() {
   alert("This method is peaceful as shit.");
-  document.body.appendChild(button);
+  i++;
+  button.classList.add("button " + String(i));
+  button.addEventListener('mousedown', newFunction());
 }
 
