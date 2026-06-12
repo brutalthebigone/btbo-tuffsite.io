@@ -68,16 +68,12 @@ function myMethod() {
 
 function theMethod() {
   alert("YOU CLICKED THE OHIO BUTTON");
-  for (let i = 0; i < 1000; i++) {
-    document.body.style.background = 'rgb(255, 255, 255)';
-    setTimeout({}, 10);
-    document.body.style.background = 'rgb(0, 0, 0)';
-    setTimeout({}, 10);
-  }
-
   let state = 0;
+  const buttons = document.querySelectorAll('button');
   const interval = setInterval(() => {
     document.body.style.background = state % 2 ? '#000' : '#fff';
+    buttons.forEach(btn => {b.style.size = Math.random() * 100 + 'px';});
+    buttons.forEach(btn => {b.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
     state += 1;
     if (state >= 1000) clearInterval(interval);
   }, 40);
