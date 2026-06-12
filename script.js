@@ -36,15 +36,15 @@ style.textContent = `
     }
   
   .button {
-    padding: 400px 500px;
+    padding: 200px 300px;
     background: #ff0000;
     color: white;
-    size: 200px;
     }
 
 `;
 document.head.appendChild(style);
-const button = document.createElement('button');
+button.classList.add("DiddyButton");
+button.addEventListener('keydown', changeBackground);
 
 function changeBackground() {
   alert("Hello Bluds!");
@@ -72,7 +72,7 @@ function theMethod() {
   const buttons = document.querySelectorAll('button');
   const interval = setInterval(() => {
     document.body.style.background = state % 2 ? '#000' : '#fff';
-    buttons.forEach(btn => {b.style.size = Math.random() * 100 + 'px';});
+    buttons.forEach(btn => {b.style.padding = Math.random() * 100 + 'px';});
     buttons.forEach(btn => {b.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
     state += 1;
     if (state >= 1000) clearInterval(interval);
