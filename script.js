@@ -42,6 +42,15 @@ style.textContent = `
     color: white;
     }
 
+  .csa p {
+    font-size: 50px;
+    color: #333;
+    }
+  .csa h1 {
+    font-size: 100px;
+    color: #222;
+    }
+
 `;
 
 let i = 0;
