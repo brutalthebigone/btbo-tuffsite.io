@@ -96,6 +96,7 @@ function theOtherMethod() {
 
 function changeBackgroundTwo() {
   document.body.style.background = '#47aaeb'
+  buttons.forEach(btn => {btn.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
   let response = prompt("Here's a more pleasant color. Do you like it?");
   document.getElementById("changingText").textContent = "You answered " + response + ". Interesting....";
 }
