@@ -74,9 +74,10 @@ function theMethod() {
   let state = 0;
   const buttons = document.querySelectorAll('button');
   const interval = setInterval(() => {
-    document.body.style.background = state % 2 ? '#000' : '#fff';
+    document.body.style.background = state % 2 ? '#0f0' : '#f0f';
     buttons.forEach(btn => {btn.style.padding = Math.random() * 100 + 'px';});
     buttons.forEach(btn => {btn.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
+    buttons.forEach(btn => {btn.style.fontSize = Math.random() * 50 + 'px';});
     state += 1;
     if (state >= 1000) clearInterval(interval);
   }, 40);
@@ -91,5 +92,11 @@ function theOtherMethod() {
   i++;
   button.classList.add("button " + String(i));
   button.addEventListener('mousedown', newFunction());
+}
+
+function changeBackgroundTwo() {
+  document.body.style.background = '#47aaeb'
+  let response = prompt("Here's a more pleasant color. Do you like it?");
+  document.getElementById("changingText").textContent = "You answered " + response + ". Interesting....";
 }
 
