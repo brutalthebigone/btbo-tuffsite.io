@@ -74,7 +74,7 @@ function theMethod() {
   let state = 0;
   const buttons = document.querySelectorAll('button');
   const interval = setInterval(() => {
-    document.body.style.background = state % 2 ? '#0f0' : '#f0f';
+    document.body.style.background = state % 4 === 0 ? '#0f0' : state % 4 === 1 ? '#f0f' : state % 4 === 2 ? '#000' : '#fff';
     buttons.forEach(btn => {btn.style.padding = Math.random() * 100 + 'px';});
     buttons.forEach(btn => {btn.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;});
     buttons.forEach(btn => {btn.style.fontSize = Math.random() * 50 + 'px';});
@@ -84,7 +84,7 @@ function theMethod() {
 }
 
 function newMethod() {
-  document.body.append("THIS IS TEXT THAT YOU CREATE IN THE WORLD");
+  alert("My Time");
 }
 
 function theOtherMethod() {
