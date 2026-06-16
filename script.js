@@ -4,6 +4,7 @@ style.textContent = `
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #00ff00;
