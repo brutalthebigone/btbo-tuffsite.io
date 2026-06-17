@@ -50,7 +50,7 @@ style.textContent = `
     font-size: 100px;
     color: #222;
     }
-  .projects body {
+  .projects {
     background: #f0f0f0;
     color: #333;
     font-family: 'Comic Sans MS', sans-serif;
@@ -63,23 +63,22 @@ style.textContent = `
     border: none;}
 `;
 
-let i = 0;
-
 document.head.appendChild(style);
-button.classList.add("DiddyButton");
-button.addEventListener('keydown', changeBackground);
 
 const npb = document.getElementById("nextPageButton");
-npb.addEventListener('click', function() {
-  window.location.href = "projects.html";
-})
-npb.style.padding = "20px 40px";
+if (npb) {
+  npb.addEventListener('click', function() {
+    window.location.href = "projects.html";
+  });
+  npb.style.padding = "20px 40px";
+}
 
 const pres = document.getElementById("presentation");
-
-pres.addEventListener('click', function() {
-  window.location.href = "https://docs.google.com/presentation/d/1c1Onk6McfWvDY4h9tbMFGYinuM7FKd_tXhKfC9Yl4mk/edit?slide=id.g3e54667fe49_0_63#slide=id.g3e54667fe49_0_63";
-})
+if (pres) {
+  pres.addEventListener('click', function() {
+    window.location.href = "https://docs.google.com/presentation/d/1c1Onk6McfWvDY4h9tbMFGYinuM7FKd_tXhKfC9Yl4mk/edit?slide=id.g3e54667fe49_0_63#slide=id.g3e54667fe49_0_63";
+  });
+}
 
 
 
@@ -123,13 +122,11 @@ function newMethod() {
 
 function theOtherMethod() {
   alert("This method is peaceful as shit.");
-  i++;
-  button.classList.add("button " + String(i));
-  button.addEventListener('mousedown', newFunction());
 }
 
 function changeBackgroundTwo() {
   document.body.style.background = '#47aaeb'
+  const buttons = document.querySelectorAll('button');
   buttons.forEach(btn => {btn.style.background = "blue";});
   let response = prompt("Here's a more pleasant color. Do you like it?");
   document.getElementById("changingText").textContent = "You answered " + response + ". Interesting....";
