@@ -80,6 +80,18 @@ if (pres) {
   });
 }
 
+const future = document.getElementById("future");
+if (future) {
+  future.addEventListener('click', function() {
+    window.location.href = "future.html";
+  });
+}
+future.style.padding = "500px 700px";
+future.style.fontSize = "100px";
+
+
+
+
 
 
 function changeBackground() {
