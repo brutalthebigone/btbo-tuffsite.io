@@ -50,7 +50,17 @@ style.textContent = `
     font-size: 100px;
     color: #222;
     }
-
+  .projects body {
+    background: #f0f0f0;
+    color: #333;
+    font-family: 'Comic Sans MS', sans-serif;
+    justify-content: center;
+    align-items: center;}
+  .projects button {
+    padding: 20px 40px;
+    background: #007BFF;
+    color: white;
+    border: none;}
 `;
 
 let i = 0;
@@ -62,6 +72,13 @@ button.addEventListener('keydown', changeBackground);
 const npb = document.getElementById("nextPageButton");
 npb.addEventListener('click', function() {
   window.location.href = "projects.html";
+})
+npb.style.padding = "20px 40px";
+
+const pres = document.getElementById("presentation");
+
+pres.addEventListener('click', function() {
+  window.location.href = "https://docs.google.com/presentation/d/1c1Onk6McfWvDY4h9tbMFGYinuM7FKd_tXhKfC9Yl4mk/edit?slide=id.g3e54667fe49_0_63#slide=id.g3e54667fe49_0_63";
 })
 
 
